@@ -9,6 +9,7 @@ def selection_sort( arr ):
             # if number after is smaller than current smallest number, reassign index of smallest
             if arr[j] < arr[smallest_index]:
                 smallest_index = j
+        # 
         if smallest_index != cur_index:
             arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index],
     return arr
